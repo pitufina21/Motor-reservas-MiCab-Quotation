@@ -1,0 +1,47 @@
+<script>
+    $(document).ready(function () {
+       $('#editar').click(function () {
+
+           const oAlert = alertify.confirm().setContent(`
+               <form>  
+                   <label>Lugar</label>
+                   <input type="text" name="alert-pickup" class="form-control" value="${document.querySelector('#pickup-span').innerText}">
+
+                   <label>Destino</label>
+                   <input type="text" name="alert-destino" class="form-control" value="${document.querySelector('#destino-span').innerText}">
+
+                   <label>Fecha</label>
+                   <input type="text" name="alert-date" class="form-control" value="${document.querySelector('#date-span').innerText}">
+
+                   <label>Hora</label>
+                   <input type="text" name="alert-time" class="form-control" value="${document.querySelector('#time-span').innerText}">
+
+                   <label>Numero de personas</label>
+                   <input type="text" name="alert-pipol" class="form-control" value="${document.querySelector('#pipol-span').innerText}">
+
+                   <button type="submit">Ok</button>
+                   <button type="submit">Cancelar</button>
+
+               </form>
+           `).setHeader('<em> <i class="fas fa-edit d-flex justify-content-center margin-top: 63px" style = "color: #ED5F98; font-size: 90px"></i> </em> ')
+               .set('onok', (closeEvent) => {
+                   alertify.success('Saved');
+                   document.querySelector('#pickup-span').innerText = document.querySelector(
+                       'input[name="alert-pickup"]').value;
+                   document.querySelector('#destino-span').innerText = document.querySelector(
+                       'input[name="alert-destino"]').value;
+                   document.querySelector('#date-span').innerText = document.querySelector(
+                       'input[name="alert-date"]').value;
+                   document.querySelector('#time-span').innerText = document.querySelector(
+                       'input[name="alert-time"]').value;
+                   document.querySelector('#pipol-span').innerText = document.querySelector(
+                       'input[name="alert-pipol"]').value;
+               }).set('oncancel', function (closeEvent) {
+                   alertify.error('Cancel');
+               });
+
+           oAlert.show();
+
+       })
+   })
+</script>

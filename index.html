@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiCab</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="public/css/normalize.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="public/libs/fontawesome/css/all.css">
+    <link rel="stylesheet" href="public/libs/alertifyjs/css/alertify.css">
+    <link rel="stylesheet" href="public/libs/bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="public/css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl navbar-dark">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="public/img/Logo Negativo 3.png" alt="MiCab.com">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mr-auto" id="menu">
+                        <div class="mr-auto"></div>
+                        <ul class="navbar-nav">
+                            <a href="price.html" class="nav-link">Cotizar</a>
+                            <a href="aboutUs.html" class="nav-link">¿Quienes Somos?</a>
+                            <a href="presence.html" class="nav-link">Presencia</a>
+                            <a href="contact.html" class="nav-link">Contactanos</a>
+                            <a href="companies.html" class="nav-link">Empresas</a>
+                            <a href="drivers.html" class="nav-link">Conductores</a>
+                            <a href="english.html" class="nav-link">English</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section1">
+            <h1>Revisa</h1>
+            <h2>Categoría</h2>
+            <div class="categories ">
+                <div class="categories-content container-fluid d-flex justify-content-between align-items-center"
+                    style="max-width: 720px; margin: 0 auto; gap: 63px;">
+
+                    <div class="sedan" style="margin-top: 79px; ">
+                        <img src="public/img/Sedan.png" alt="Logo Sedan">
+                    </div>
+                    <div class="group4 row d-flex justify-content-center">
+                        <h3 style="margin-top: 31px;">MiCab Sedan</h3>
+                        <div class="micab d-flex text-center" style="margin-top: 34px; gap: 23px;">
+                            <!-- =============================================================================================================================== -->
+                            <div style="font-weight: bold;">
+                                <i class="fas fa-user" style="color: #90adf0; font-size: 34px;"></i>
+                                <p style="color: #90adf0; margin-top: 12px; font-size: 18px;">X</p>
+                            </div>
+
+                            <!-- ================================================================================================================================ -->
+                            <div>
+                                <span style="color: #90adf0; font-size: 29px;">|</span>
+                                <p> </p>
+                            </div>
+
+                            <!-- ================================================================================================================================ -->
+                            <div style="font-weight: bold;">
+                                <i class="fas fa-suitcase-rolling" style="color: #90adf0; font-size: 34px;"></i>
+                                <p style="color: #90adf0; margin-top: 12px; font-size: 18px;">X chicas</p>
+                            </div>
+
+                            <!-- ================================================================================================================================ -->
+                            <div style="font-size: 26px; font-weight: bold;">
+                                <span
+                                    style="color: #90adf0; font-weight: 700; line-height: 34.8px; text-align: center; font-family: 'Lato', sans-serif; font-size: 29px;">Ó</span>
+                                <p> </p>
+                            </div>
+
+                            <!-- ================================================================================================================================ -->
+                            <div style="font-weight: bold;">
+                                <i class="fas fa-suitcase" style="color: #90adf0; font-size: 34px;"></i>
+                                <p style="color: #90adf0; margin-top: 12px; font-size: 16px;">X grandes</p>
+                            </div>
+
+                            <!-- ================================================================================================================================ -->
+                        </div>
+                    </div>
+                    <button class="btn pencil">
+                        <i class="fas fa-pencil" style="color: #FFFFFF; font-size: 22px; "></i>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section2" id="info">
+            <h2>Información de traslado(s)</h2>
+            <div>
+                <h4>Ida</h4>
+                <div class="group5 container ">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="pickup-span"> Guadalajara Aeropuerto.</span>
+                </div>
+
+                <div class="group5 container">
+                    <i class="fas fa-map-marker-check"></i>
+                    <span id="destino-span">Av. Chapalita #1470, Col. Chapalita C.P. 44500</span>
+                </div>
+
+                <div class="group5 container">
+                    <i class="fas fa-calendar-day"></i>
+                    <span id="date-span">2021/01/01</span>
+                </div>
+
+                <div class="group5 container">
+                    <i class="fas fa-clock"></i>
+                    <span id="time-span"> 15:00</span>
+                </div>
+
+                <div class="group5 container">
+                    <i class="fas fa-user"></i>
+                    <span id="pipol-span"> 04</span>
+                </div>
+            </div>
+
+            <!-- *****************  Boton de Editar  **************-->
+
+            <button id="editar" class="pencil container" type="submit" value="editar">
+                <i class="fas fa-pencil" style="color: #FFFFFF"></i>
+            </button>
+        </section>
+
+        <section class="section3">
+            <h2>Precio Total</h2>
+            <div class="tarifas">
+                <p>Tarifa base: $220.00 <span>mxn</span> </p>
+                <p>Impuestos $220.00 <span>mxn</span> </p>
+                <div class="total">
+                    <p>Total: $440.00 <span>mxn</span> </p>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle " type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Continuar a reservar
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <section class="section4">
+                            <h2 class="">Ingresa tus datos</h2>
+                            <form name="">
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Nombre(s)</label>
+                                        <input type="text" class="form-control" aria-label="First name">
+
+                                        <label class="form-label">Correo Electronico</label>
+                                        <input type="email" class="form-control">
+
+                                        <label class="form-label">Numero de vuelo (opcional)</label>
+                                        <input type="number" class="form-control">
+
+                                        <label class="form-label">Comentarios (opcional)</label>
+                                        <input style="height: 97px; type=" text" class="form-control form-text">
+                                    </div>
+
+                                    <div class="col">
+                                        <label>Apellidos</label>
+                                        <input type="text" class="form-control" aria-label="Last name">
+
+                                        <label class="form-label">Telefono Celular</label>
+                                        <input type="number" class="form-control">
+
+                                        <label class="form-label">Aerolinea (opcional)</label>
+                                        <input type="number" class="form-control">
+
+                                        <div class="mb-3 form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">Acepto
+                                                los<span>terminos
+                                                    y condiciones</span> </label>
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">Enviame Información
+                                                de
+                                                ofertas y promociones al correo proporcionado</label>
+                                        </div>
+                                        <div class="dropup boton">
+                                            <button type="submit" class="btn  dropdown-toggle" data-toggle="collapse"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Continuar pago
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+
+                    </div>
+        </section>
+    </main>
+    <footer class=" footer1 text-center">
+        <div class="logo">
+            <img src="public/img/Bitmap.png" alt="Whatsapp">
+        </div>
+        <div class="container-fluid p-4 footer1">
+            <div class="row align-items-center">
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled img-fluid mb-0">
+                        <li>
+                            <img src="public/img/Logo Negativo 3.png" alt="Logo MiCab">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="terminos-condiciones.html" class="text-white">Terminos y Condiciones</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Revisar mi Reservacion</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white">Nuestras marcas:</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <span class="text-white d-flex justify-content-center">mexrentacar.com</span>
+                            <span class="text-white d-flex justify-content-center">masrentacar.com</span>
+                            <span class="text-white d-flex justify-content-center">autotransportesmex.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-2 mb-md-0">
+                    <ul class="list-unstyled img-fluid">
+                        <li>
+                            <img src="public/img/facebook-square.png" alt="">
+                        </li>
+                        <li>
+                            <img src="public/img/White phone.png" alt="">
+                            <span class="text-white"> +52 (33) 24510494 </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer2 -->
+        <div class="d-flex justify-content-evenly footer2  text-white" style="background-color: #3057B2">
+            <span>Aceptamos:</span>
+            <img src="public/img/VISA.png" alt="logo Visa">
+            <img src="public/img/MC.png" alt="Logo MC">
+            <img src="public/img/AMEX.png" alt="Logo MC">
+        </div>
+
+    </footer>
+
+    <script src="public/libs/jquery-3.5.1.min.js"></script>
+    <script src="public/libs/alertifyjs/alertify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="public/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="public/js/editar-traslados.js"></script>
+
+    <script src="">
+       
+    </script>
+
+</body>
+
+</html>
